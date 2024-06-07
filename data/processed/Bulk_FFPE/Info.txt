@@ -1,0 +1,4 @@
+FFPE_taxaAdj : sample of FFPE with adjust taxa name
+FF_TaxaAdj : sample of Fresh frozen bulk with adjust taxa name
+NCT_TaxaAdj : NCT sample with adjust taxa name
+All : all above those three

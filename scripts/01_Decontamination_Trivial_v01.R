@@ -1,0 +1,1 @@
+## decontaminate NCT object by trivial method: remove 

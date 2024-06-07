@@ -1,0 +1,4 @@
+NCTs_v3 : (time series data) NCT phyloseq object with shorter sample name and quarter year added.
+physeq_1750_90_q15: (mice model 4 vs 4): true samples
+physeq_1000_50_nct: (mice model 4 vs 4): nct
+physeq_acid_nct: (mice model 4 vs 4): nct with acid treatment

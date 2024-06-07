@@ -5,6 +5,11 @@
 # BiocManager::install(version = "3.19")
 BiocManager::install(c("phyloseq", "microbiome", "ComplexHeatmap"), update = FALSE)
 remotes::install_github("david-barnett/microViz")
+## install Scrub
+install.packages( c('glmnet', 'torch', 'tidyverse') )
+BiocManager::install(c('glmnet', 'torch', 'tidyverse') )
+devtools::install_github("shenhav-and-korem-labs/SCRuB")
+
 library(phyloseq)
 library(tidyverse)
 library(dplyr)
@@ -333,6 +338,8 @@ Wrapper_Decontam <- function(phylo, neg_f, thres = 0.1){
     isContaminant(method="prevalence", neg=neg_f, threshold = thres, normalize = FALSE, detailed = FALSE) 
   return(prune_taxa(!is_contam, phylo))
 }
+
+##--------- SCRuB ----------------------
 
 ###----Others-------------
 ## Inspect sequencing depth
